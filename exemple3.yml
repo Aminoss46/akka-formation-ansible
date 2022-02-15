@@ -1,0 +1,8 @@
+- name: exemple3
+  hosts: s1
+  become: yes #devenir root ? Oui !
+  tasks:
+  - name: Demo module apt
+    apt: 
+      name: apache2 # apt install -y apache2
+      state: present # option par défault

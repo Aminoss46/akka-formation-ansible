@@ -1,0 +1,6 @@
+#playbook de demonstration du module ping
+- name: ping demo
+  hosts: all
+  tasks: 
+  - name: task 1
+    ping: 
